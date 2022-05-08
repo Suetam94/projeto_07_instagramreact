@@ -47,11 +47,15 @@ header {
     align-items: center;
 }
 
-.header .logo .icon ion-icon {
+.header .logo .icon {
+    border-right: 1px solid #DBDBDB;
+    padding-right: 10px;
+}
+
+.header .logo .icon .logo-icon {
     width: 22px;
     height: 22px;
-    padding-right: 10px;
-    border-right: 1px solid #DBDBDB;
+    cursor: pointer;
 }
 
 .header .logo .name {
@@ -84,7 +88,7 @@ header {
     align-items: center;
 }
 
-.header .icons-bar ion-icon {
+.header .icons-bar .interactive-bar {
     width: 22px;
     height: 22px;
     margin-right: 10px;

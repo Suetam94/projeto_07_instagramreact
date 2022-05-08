@@ -13,7 +13,7 @@ export function Header() {
       <div className="header container">
         <div className="logo">
           <div className="icon">
-            <InstagramLogo width={22} height={22} />
+            <InstagramLogo className="logo-icon" width={22} height={22} />
           </div>
           <div className="name">
             <a href="#">
@@ -25,10 +25,10 @@ export function Header() {
           <input type="text" placeholder="Pesquisar" />
         </form>
         <div className="icons-bar">
-          <PaperPlaneTilt width={22} height={22} />
-          <Compass width={22} height={22} />
-          <Heart width={22} height={22} />
-          <User width={22} height={22} />
+          <PaperPlaneTilt className="interactive-bar" width={22} height={22} />
+          <Compass className="interactive-bar" width={22} height={22} />
+          <Heart className="interactive-bar" width={22} height={22} />
+          <User className="interactive-bar" width={22} height={22} />
         </div>
       </div>
     </header>
