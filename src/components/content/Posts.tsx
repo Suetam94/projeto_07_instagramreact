@@ -2,7 +2,7 @@ import { Post, PostProps } from "./Post";
 
 import barked from "../../assets/img/post/barked.png";
 import meow from "../../assets/img/post/meow.png";
-import meow2 from "../../assets/img/post/meow2.png";
+import meow2 from "../../assets/img/post/meow2.jpg";
 
 import barkedUser from "../../assets/img/users/adorable.png";
 import meowUser from "../../assets/img/users/small.png";
