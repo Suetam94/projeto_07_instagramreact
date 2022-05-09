@@ -12,17 +12,17 @@ export interface PostProps {
   image: string;
 }
 
-import respondeAi from "../../assets/img/story/respondeai.png";
+import respondeAi from "../../../assets/img/story/respondeai.png";
 
 export function Post({ user, userImage, image }: PostProps) {
   return (
     <div className="post">
       <div className="heading">
         <div className="user">
-          <a href="#">
+          <a href="src/components/content/posts/Post#">
             <img src={userImage} alt={user} />
           </a>
-          <a href="#">
+          <a href="src/components/content/posts/Post#">
             <span>{user}</span>
           </a>
         </div>

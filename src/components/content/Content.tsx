@@ -1,5 +1,6 @@
-import { Stories } from "./Stories";
-import { Posts } from "./Posts";
+import { Stories } from "./stories/Stories";
+import { Posts } from "./posts/Posts";
+import { Sidebar } from "./sidebar/Sidebar";
 
 export function Content() {
   return (
@@ -8,6 +9,7 @@ export function Content() {
         <div className="content">
           <Stories />
           <Posts />
+          <Sidebar />
         </div>
       </div>
     </main>
