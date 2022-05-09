@@ -35,10 +35,10 @@ export function Post({ user, userImage, image }: PostProps) {
       </div>
       <div className="footer">
         <div className="icons">
-          <Heart />
-          <ChatCircle />
-          <PaperPlaneTilt />
-          <BookmarkSimple />
+          <Heart className="post-icon" />
+          <ChatCircle className="post-icon" />
+          <PaperPlaneTilt className="post-icon" />
+          <BookmarkSimple className="post-icon" />
         </div>
         <div className="thumbs">
           <img src={respondeAi} alt="Curtido" />
