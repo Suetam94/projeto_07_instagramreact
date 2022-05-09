@@ -1,4 +1,4 @@
-import { Post, PostProps } from "./Post";
+import {Post, PostProps} from "./Post";
 
 import barked from "../../../assets/img/post/barked.png";
 import meow from "../../../assets/img/post/meow.png";
@@ -31,7 +31,7 @@ export function Posts() {
       {postsData.map((post, index) => {
         return (
           <Post
-              key={index}
+            key={index}
             user={post.user}
             image={post.image}
             userImage={post.userImage}

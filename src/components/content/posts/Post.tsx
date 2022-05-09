@@ -13,8 +13,11 @@ export interface PostProps {
 }
 
 import respondeAi from "../../../assets/img/story/respondeai.png";
+import { useState } from "react";
 
 export function Post({ user, userImage, image }: PostProps) {
+  const [isPostLiked, setIsPostLiked] = useState(false);
+
   return (
     <div className="post">
       <div className="heading">
@@ -35,7 +38,19 @@ export function Post({ user, userImage, image }: PostProps) {
       </div>
       <div className="footer">
         <div className="icons">
-          <Heart className="post-icon" />
+          {isPostLiked ? (
+            <Heart
+              onClick={() => setIsPostLiked(!isPostLiked)}
+              weight={"fill"}
+              color={"#FD1D1D"}
+              className="post-icon"
+            />
+          ) : (
+            <Heart
+              onClick={() => setIsPostLiked(!isPostLiked)}
+              className="post-icon"
+            />
+          )}
           <ChatCircle className="post-icon" />
           <PaperPlaneTilt className="post-icon" />
           <BookmarkSimple className="post-icon" />
