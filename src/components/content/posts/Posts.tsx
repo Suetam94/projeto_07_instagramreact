@@ -28,9 +28,10 @@ export function Posts() {
 
   return (
     <section className="posts">
-      {postsData.map((post) => {
+      {postsData.map((post, index) => {
         return (
           <Post
+              key={index}
             user={post.user}
             image={post.image}
             userImage={post.userImage}

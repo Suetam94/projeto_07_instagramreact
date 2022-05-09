@@ -1,6 +1,7 @@
 import { Stories } from "./stories/Stories";
 import { Posts } from "./posts/Posts";
 import { Sidebar } from "./sidebar/Sidebar";
+import { MobileBar } from "./mobile/MobileBar";
 
 export function Content() {
   return (
@@ -12,6 +13,7 @@ export function Content() {
           <Sidebar />
         </div>
       </div>
+      <MobileBar />
     </main>
   );
 }

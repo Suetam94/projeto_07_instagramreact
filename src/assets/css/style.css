@@ -508,7 +508,9 @@ header {
     display: none;
   }
 
-  .header .icons-bar ion-icon:not(.header .icons-bar ion-icon:first-child) {
+  .header
+    .icons-bar
+    .interactive-bar:not(.header .icons-bar .interactive-bar:first-child) {
     display: none;
   }
 
@@ -517,7 +519,7 @@ header {
     width: 60%;
   }
 
-  .header .logo .icon ion-icon {
+  .header .logo .icon {
     border: none;
   }
 
@@ -577,7 +579,7 @@ header {
     color: #262626;
   }
 
-  .mobile-bar .icons a ion-icon {
+  .mobile-bar .icons a .mobile-icon {
     width: 22px;
     height: 22px;
   }

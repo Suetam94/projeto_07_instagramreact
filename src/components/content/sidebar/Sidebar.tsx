@@ -62,16 +62,16 @@ export function Sidebar() {
           <span>Ver tudo</span>
         </div>
         <div className="suggestions-body">
-          {suggetionsData.map((suggestion) => {
+          {suggetionsData.map((suggestion, index) => {
             return (
-              <Suggestions user={suggestion.user} image={suggestion.image} />
+              <Suggestions key={index} user={suggestion.user} image={suggestion.image} />
             );
           })}
         </div>
         <div className="footer">
           <div className="help">
-            {helpOptions.map((option) => {
-              return <HelpOptions option={option} />;
+            {helpOptions.map((option, index) => {
+              return <HelpOptions key={index} option={option} />;
             })}
           </div>
           <div className="copyright">
